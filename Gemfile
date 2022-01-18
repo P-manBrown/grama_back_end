@@ -28,6 +28,7 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+# クロスドメイン対応
 gem 'rack-cors'
 
 group :development, :test do
@@ -47,8 +48,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-# ログイン機能
+# ログイン機能（トークン認証）
 gem 'devise'
+gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth'
 
 # 日本語化
 gem 'devise-i18n'
