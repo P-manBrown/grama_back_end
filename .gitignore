@@ -22,4 +22,6 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# 以下追記
 /config/database.yml
+/config/initializers/cors.rb
